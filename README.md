@@ -1,1 +1,3 @@
-Evil Hangman is a Hangman game structured in C that 
+-	Evil Hangman is a hangman game programmed in C that cheats by removing words from a list of dictionary words in a text file based on the player’s guesses.
+-	Ultimately it prunes possible answer choices until the program wins.
+-	This game was programmed using Linux with the use of a generic vector structure and manually designed string data types.
