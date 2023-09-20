@@ -128,7 +128,6 @@ Status my_string_insertion(MY_STRING hMy_string, FILE* fp) {
             return Failure;
         }
     }
-
     return Success;
 }
 
@@ -190,6 +189,7 @@ Boolean my_string_empty(MY_STRING hMy_string) {
     if (pMy_string->size == 0) {
         return TRUE;
     }
+    
     return FALSE;
 }
 
@@ -219,7 +219,6 @@ void my_string_assignment(ITEM* pLeft, ITEM right) {
         for (int i = 0; i < my_string_get_size((MY_STRING)Right); i++) {
             my_string_push_back((MY_STRING)*pLeft, Right->data[i]);
         }
-
     }
 }
 
